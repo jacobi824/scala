@@ -8,7 +8,11 @@ package jacobot
 object JacobotMain {
 
   def main(args: Array[String]): Unit = {
-    println("Hello, world!")
+    val bot = new Jacobot
+    bot.setVerbose(true)
+    bot.setEncoding("UTF-8")
+    bot.connect("irc.o-in.dwango.co.jp")
+    bot.joinChannel("#komitest")
   }
 
 }
